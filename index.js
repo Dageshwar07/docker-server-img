@@ -88,9 +88,9 @@ app.post("/api/login", async (req, res) => {
 // *************************************************************************************
 const port = process.env.PORT
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}` );
+  console.log(`Serve at http://localhost:${port}` );
 });
 
-const token = jwt.sign({ user }, process.env.JWT_SECRET, {
+const token = jwt.sign({ users }, process.env.JWT_SECRET, {
   expiresIn: "1h",
 });

@@ -7,6 +7,8 @@ WORKDIR /app
 # COPY source dest
 # source define kar rha hai hamare working directory ko
 # dest define kar raha hai use folder ko jo container me rahega
+COPY package.json .
+RUN npm install
 
 # COPY server.js pakage.json /app/
 # is code is se server .js and pakage.json file push hoga container ke app directory me
@@ -14,8 +16,7 @@ WORKDIR /app
 # server folder se jitne bhi dile hai push ho jayenge container ke app directory me
 COPY . .
 # first dot bta rha hai hmara source folder and second wala hmare container ka directory
-
-RUN npm install
+# RUN npm install
 RUN npm install -g nodemon
 # ye code hmare jo bhi jaruri module ya packages hai usko container me install krega and also genrate node_module folder
 
@@ -48,5 +49,4 @@ CMD [ "npm", "run","dev" ]
 # -----we can also write-------------
 # docker tag server-img-1 dageshwar07/server-img-1:tag-------------->>create tage or create origin from remote location of dockerhub
 # docker push dageshwar07/server-img-1:tag------------------->>push the docker file to dockerhub
-
 
