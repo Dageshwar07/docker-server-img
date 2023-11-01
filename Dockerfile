@@ -42,3 +42,11 @@ CMD [ "npm", "run","dev" ]
 # docker images  prune------------------>> to remove dangling image
 # docker system prune--------------------->>to remove dangling image and container
 # docker system prune -a--------------------->>to remove running and dangling image and container
+
+# docker tag local-image:tagname new-repo:tagname------------->>create tage or create origin from remote location of dockerhub
+# docker push new-repo:tagname---------------->>push the docker file to dockerhub
+# -----we can also write-------------
+# docker tag server-img-1 dageshwar07/server-img-1:tag-------------->>create tage or create origin from remote location of dockerhub
+# docker push dageshwar07/server-img-1:tag------------------->>push the docker file to dockerhub
+
+
