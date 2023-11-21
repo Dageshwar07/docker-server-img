@@ -33,7 +33,7 @@ CMD [ "npm", "run","dev" ]
 # docker container ls-------------->>to view all the container jo chal rha hai
 # docker container ls -a -------------->>to view all the container
 # docker container start container_id{07fc4e1733b3}------>> to start existing container
-# docker exec -it 07fc4e1733b3 sh-------->>container ke ander shell open krne ka command
+# docker exec -it(interactive terminal) 07fc4e1733b3 sh-------->>container ke ander shell open krne ka command
 # docker container stop 07fc4e1733b3----------->>container ko stop krne ka command
 # docker container run -d --name c1 server-img---------->>to rename the container
 # docker logs c1---------->docker logs dekhne ka command
