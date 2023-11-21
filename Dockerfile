@@ -38,7 +38,7 @@ CMD [ "npm", "run","dev" ]
 # docker container run -d --name c1 server-img---------->>to rename the container
 # docker logs c1---------->docker logs dekhne ka command
 # docker container stop c1------------>>to stop docker container with name
-# docker container run -d -p 4000:4000 --name c3 server-img-1-------------->>port map krna systemka docker container se basically dono server ko ek port me chalana
+# docker container run -d -p 4000:4000 --name c3 server-img-1-------------->>detached mode(taki terminal stuck na ho ) me port map krna systemka docker container se basically dono server ko ek port me chalana
 # docker container prune------------------>> to remove stop container
 # docker images  prune------------------>> to remove dangling image
 # docker system prune--------------------->>to remove dangling image and container
