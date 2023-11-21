@@ -26,8 +26,8 @@ CMD [ "npm", "run","dev" ]
 # CMD ke jagah ye bhi likh skte hai 
 # ye code hmare project ko container me run karega
 # ye code hmesa last me chalega after build app
-
-
+# 
+# docker rmi image_name.-------------------->> to delete image
 # docker image build -t server-img .  ---------->>to create new image in docker 
 # docker images , docker image ls ------------------>> to view all the images
 # docker container ls-------------->>to view all the container jo chal rha hai
@@ -47,6 +47,6 @@ CMD [ "npm", "run","dev" ]
 # docker tag local-image:tagname new-repo:tagname------------->>create tage or create origin from remote location of dockerhub
 # docker push new-repo:tagname---------------->>push the docker file to dockerhub
 # -----we can also write-------------
-# docker tag server-img-1 dageshwar07/server-img-1:tag-------------->>create tage or create origin from remote location of dockerhub
+# docker tag server-img-1 dageshwar07/server-img-1:tag-------------->>create tag or create origin from remote location of dockerhub
 # docker push dageshwar07/server-img-1:tag------------------->>push the docker file to dockerhub
 
