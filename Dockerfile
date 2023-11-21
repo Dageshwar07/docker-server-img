@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 WORKDIR /app
-# ye code ba rha hai ki container me hmari directory koun si hogi
+# ye code bta rha hai ki container me hmari directory koun si hogi
 
 # COPY source dest
 # source define kar rha hai hamare working directory ko
